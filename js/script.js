@@ -9,7 +9,7 @@ function onButtonClick() {
         list.push(elem.value);
         console.log(list);
         let json = JSON.stringify(list);
-        localStorage.setItem("mykey", json);
+        localStorage.setItem("savedTodos", json);
 
 
         let checkboxWrapper = document.createElement("LI");
@@ -23,7 +23,7 @@ function onButtonClick() {
 }
 let list = []
 
-let temp = localStorage.getItem("mykey");
+let temp = localStorage.getItem("savedTodos");
 
 if (temp != null) {
     list = JSON.parse(temp);
