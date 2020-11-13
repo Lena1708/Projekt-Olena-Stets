@@ -23,6 +23,9 @@ body {
 h1 {
     color: rgb(88, 39, 167);
 }
+h3 {
+    font-weight: bold;
+}
 h4 {
     color: rgb(29, 66, 187);
     font-size: 20px;
@@ -48,7 +51,4 @@ h4 {
 }
 button:hover {
     background-color: rgb(229, 195, 248);
-}
-h3 {
-    font-weight: bold;
 }
