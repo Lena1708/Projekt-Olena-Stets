@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+    overflow: auto;
     width: 100%;
     height: 100vh;
     margin: 0;
@@ -50,6 +50,9 @@ h4 {
 }
 .add-todo {
     color: rgb(34, 162, 248);
+}
+.add-todo-server {
+    color: brown;
 }
 button:hover {
     background-color: rgb(229, 195, 248);

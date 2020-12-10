@@ -7,6 +7,25 @@ if (temp != null) {
     drawTodos();
 }
 
+function onServerButtonClick() {
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', 'http://localhost:3000', false);
+    xhr.send();
+    if (xhr.status != 200) {
+        alert( xhr.status + ': ' + xhr.statusText );
+    } else {
+        let newTodo = {
+            todoText: xhr.responseText,
+            miniTodoTextArr: [],
+        }
+        todosArr.push(newTodo);
+        drawMainTodo(newTodo);
+
+        let json = JSON.stringify(todosArr);
+        localStorage.setItem("savedTodos", json);
+    }
+}
+
 function onButtonClick() {
     let mainInput = document.getElementById("mainInput");
     if (mainInput.value != "") {
@@ -127,5 +146,4 @@ function drawTodos() {
     for (let i = 0; i < todosArr.length; i++) {
         drawMainTodo(todosArr[i], i);
     }
-    
 }
