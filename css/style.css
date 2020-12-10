@@ -22,19 +22,21 @@ body {
 }
 h1 {
     color: rgb(88, 39, 167);
+    text-shadow: 4px 4px 4px rgb(185, 196, 201), 0 0 1em rgb(195, 238, 255);
 }
 h3 {
     font-weight: bold;
 }
 h4 {
-    color: rgb(29, 66, 187);
+    color: rgb(57, 82, 165);
     font-size: 20px;
+    text-shadow: 4px 4px 4px rgb(208, 219, 226), 0 0 1em rgb(195, 238, 255);
 }
 .first-сhild {
     display: block;
     width: 100%;
     height: 100px;
-    background-color:rgb(144, 216, 238);
+    background-color:rgb(168, 233, 253);
     vertical-align: top;
     padding: 40px;
 }
@@ -53,7 +55,40 @@ button:hover {
     background-color: rgb(229, 195, 248);
 }
 .delete-todo {
-    background-color: #fc8658; 
+    background-color: #fc9356; 
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 40px;
+}
+.add-mini-todo {
+    background-color: #56fa9a; 
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 50px;
+}
+.save-mini-todo {
+    background-color: #cf3efc; 
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 30px;
+}
+.delete-mini-todo {
+    background-color: #ffba53; 
     border: none;
     color: white;
     padding: 5px 8px;
